@@ -1,0 +1,16 @@
+extends index.pug
+
+block title
+  title blog details
+
+
+block landing
+  +landing('home', 'blog details')
+
+block content
+  +blog-details
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')
+    script(src='js/forms.js')

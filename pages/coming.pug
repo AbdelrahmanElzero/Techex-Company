@@ -1,0 +1,31 @@
+include includes/mixins.pug
+doctype html
+html(lang='en')
+  head
+    include includes/meta
+    include includes/styles.pug
+    block title
+      title coming soon
+  body
+    div(class='coming section second-bg-color')
+        div(class='container')
+          div(class='content-box')
+            h3(class='fs-40') coming soon 
+            p(class='pt-15') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.
+            div(class='coming-timer pt-30 d-flex justify-content-center align-items-center')
+              div(class='time days shadow') 
+              div(class='time hours shadow') 
+              div(class='time minutes shadow') 
+              div(class='time seconds shadow') 
+            form(class='newsletter')
+              input(type='email' placeholder='email address')
+              button(class='button' type='submit') Notify Me
+            div(class='socials pt-40 d-flex align-items-center justify-content-center')
+              - var socials = ['facebook', 'instagram', 'twitter', 'linkedin']
+              each social in socials
+                a(class='social-link shadow' href=`https://www.${social}.com`)
+                  i(class=`fa-brands fa-${social}`)
+
+    block scripts
+      include includes/scripts.pug
+      script(src='js/coming.js')

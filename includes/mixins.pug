@@ -1,0 +1,1474 @@
+mixin link(href, nam)
+  a(class= "btn", href= href, type='button')= name
+
+
+mixin Button(name)
+  button(class='btn', type='button')= name
+
+
+mixin about
+  div(class='about section second-bg-color')
+    div(class='container')
+      div(class='row')
+        div(class='col-lg-6 col-12')
+          div(class='text')
+            h6(class='years b-light mb-10 fs-17')  15 years of experience
+            h3(class='about-title fw-bold fs-40') Right Partner for Software Innovation
+            p(class='fs-14 main-color pt-10') Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit nam nec tellus a odio tincidunt auctor.
+          div(class='sub-content pt-20 d-flex justify-content-between align-items-center')
+            div(class='experience')
+              span(class='icon fs-40 b-light')
+                i(class="fa-solid fa-cubes fs-40")
+              h3(class='fs-30 fw-bold') experience
+              p(class="main-color") Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+            div(class='support')
+              span(class='icon fs-40 b-light')
+                i(class="fa-regular fa-comments fs-40")
+              h3(class='fs-30 fw-bold') quick support
+              p(class="main-color") Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+        div(class='col-lg-6 col-12')
+          div(class='about-image')
+            img(class='img' src="https://templates.hibootstrap.com/techex/default/assets/images/about/about-img1.jpg", alt="")
+            div(class='satisfied d-flex align-items-center')
+              img(src='/imgs/satisfied.jpg', alt="")
+              div(class='text')
+                h4(class='fs-40 fw-bold orange') 4.5k
+                h6(class='fs-20') satisfied clients
+
+
+
+mixin services
+  div(class='services-mini section main-bg-color position-relative')
+    div(class='container')
+      div(class='section-title text-center')
+        h6(class='orange') our services
+        h2(class='fw-bold text-light') We Provide a Wide Variety of IT Services
+        p(class='text-light') Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris Morbi accumsan ipsum velit.
+      div(class='service-image position-absolute top-0 end-0')
+        img(src='../imgs/service-img.png')
+      div(class='row pt-20 g-3')
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='service-min bg-light')
+            i(class="fa-brands fa-reddit-alien fs-40 b-light")
+            h4(class='fs-20 pt-15 fw-bold') IT consulting
+            p(class='fs-13 main-color') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendauctor nisi el 
+            a(href='services.html' class='btn d-flex align-items-center fs-15 fw-bold' type='button') learn more
+              i(class="fa-solid fa-angle-right")
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='service-min bg-light ')
+            i(class="fa-solid fa-cloud-arrow-down fs-40 b-light")
+            h4(class='fs-20 pt-15 fw-bold') cloud computing
+            p(class='fs-13 main-color') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendauctor nisi el 
+            a(href='services.html' class='btn d-flex align-items-center fs-15 fw-bold' type='button') learn more
+              i(class="fa-solid fa-angle-right")
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='service-min bg-light')
+            i(class="fa-solid fa-code fs-40 b-light")
+            h4(class='fs-20 pt-15 fw-bold') web development 
+            p(class='fs-13 main-color') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendauctor nisi el 
+            a(href='services.html' class='btn d-flex align-items-center fs-15 fw-bold' type='button') learn more
+              i(class="fa-solid fa-angle-right")
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='service-min bg-light')
+            i(class="fa-solid fa-chart-line fs-40 b-light")
+            h4(class='fs-20 pt-15 fw-bold') business reform
+            p(class='fs-13 main-color') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendauctor nisi el 
+            a(href='services.html' class='btn d-flex align-items-center fs-15 fw-bold' type='button') learn more
+              i(class="fa-solid fa-angle-right")
+
+
+mixin working
+  div(class='working-process section second-bg-color')
+    div(class='container')
+      div(class='section-title text-center')
+        h6(class='title-one') our working process
+        h2(class='title-two') How Our Services Will Help You to Grow Your Business
+      div(class='row g-3 pt-30')
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='working-card shadow')
+            div(class='num') 01
+            i(class="fa-brands fa-wpexplorer pt-10 fs-40 b-light")
+            h3(class='pt-10') discovery
+            p(class='main-color fs-14 line-h-9') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='working-card shadow')
+            div(class='num') 02
+            i(class="fa-regular fa-rectangle-list pt-10 fs-40 b-light")
+            h3(class='pt-10') planning
+            p(class='main-color fs-14 line-h-9') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='working-card shadow')
+            div(class='num') 03
+            i(class="fa-regular fa-circle-check pt-10 fs-40 b-light")
+            h3(class='pt-10') execute
+            p(class='main-color fs-14 line-h-9') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+        div(class='col-lg-3 col-md-6 col-12')
+          div(class='working-card shadow')
+            div(class='num') 04
+            i(class="fa-solid fa-cart-flatbed-suitcase pt-10 fs-40 b-light")
+            h3(class='pt-10') deliver
+            p(class='main-color fs-14 line-h-9') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+
+
+
+mixin video
+  div(class='video section')
+    div(class='container')
+      div(class='content d-flex align-items-center justify-content-between')
+        div(class='text')
+          h6(class='text-light') We Carry More Than Just Good Coding Skills
+          h2(class='text-light') Let's Build Your Website!
+        a(class='btn bg-light b-light' type='button' href='contact.html') contact us
+      div(class='video-content pt-40 position-relative')
+        div(class='video-image')
+          img(src='https://templates.hibootstrap.com/techex/default/assets/images/build-img.jpg', alt='')
+        div(class='video-info btn-bg-two ')
+          div(class='text')
+            span(class='text-light') watch our intro video
+            h2(class='text-light') Perfect Solution for IT Services!
+        div(class='play-video position-absolute')
+          button(class='play btn bg-light' type='button' id='playVideo')
+            i(class="fa-solid fa-play")
+    div(class='video-popup')
+      video(src='../imgs/video.mp4' id='my-video', autoplay muted controls )
+      button(class='btn close', type='button' id='closeVideo')
+        i(class="fa-solid fa-xmark fs-30")
+
+
+
+mixin stats 
+  div(class='stats section second-bg-color')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') Numbers Are Talking
+        h1(class='title-two') Let’s Check Our Business Growth and Success Story
+        p(class='main-color ') Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris Morbi accumsan ipsum velit.
+        div(class='row g-4 pt-20')
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='stat-item d-flex flex-column shadow align-items-center justify-content-center ')
+              div(class='item-image')
+                img(src='https://cdn-icons-png.flaticon.com/512/235/235280.png', alt="")
+              div(class='item-text ')
+                h3(class='counter fs-30 fw-bold', data-val="765") 000
+                h5(class='main-color') Delivered Goods
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='stat-item d-flex flex-column shadow align-items-center justify-content-center ')
+              div(class='item-image')
+                img(src='https://cdn-icons-png.flaticon.com/512/682/682023.png?w=740&t=st=1671753268~exp=1671753868~hmac=af80fa63cb54138a2afcee9998e086b0ab0abb3edef509a6aab5c985f5264f2a', alt="")
+              div(class='item-text ')
+                h3(class='counter fs-30 fw-bold', data-val="295") 000
+                h5(class='main-color') IT consulting
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='stat-item d-flex flex-column shadow align-items-center justify-content-center ')
+              div(class='item-image')
+                img(src='https://cdn-icons-png.flaticon.com/512/580/580126.png?w=740&t=st=1671753383~exp=1671753983~hmac=2af4b933c5c02a0bca786e909384503d425e25a94a4baa99fe332adceb1f7b6f', alt="")
+              div(class='item-text ')
+                h3(class='counter fs-30 fw-bold', data-val="961") 000
+                h5(class='main-color') fully launched
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='stat-item d-flex flex-column shadow align-items-center justify-content-center ')
+              div(class='item-image')
+                img(src='https://cdn-icons-png.flaticon.com/512/377/377074.png?w=740&t=st=1671755725~exp=1671756325~hmac=8c74b2743df3fe2dfe2a6b27ecedcb634dc5f643cec584ed9fd928d7e9899e17', alt="")
+              div(class='item-text ',  )
+                h3(class='counter fs-30 fw-bold', data-val="545") 000
+                h5(class='main-color') projects completed
+
+
+mixin call
+  div(class='call section main-bg-color position-relative')
+    div(class='container')
+      div(class='row align-items-center g-4')
+        div(class='col-lg-6')
+          div(class='text') 
+            h5(class='orange mb-10') call us 24/7
+            h2(class='text-light fs-40') +1 (212) 255-5511
+            p(class='text-light pt-15') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum et malesuada fames ac ante ipsum primis.
+            a(class='button contact-us', href='contact.html' type='button') contact us
+        div(class='col-lg-6')
+          div(class='call-image position-relative')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/call-us/call-us-img1.png', alt='')
+            div(class='call-quote position-absolute')
+              img(src='https://templates.hibootstrap.com/techex/default/assets/images/call-us/call-shap3.png', alt='')
+
+mixin cases
+  div(class='cases-mini seciton second-bg-color')
+      div(class='section-title mb-20')
+        h6(class='title-one') case studies
+        h2(class='title-two') Introduce Our Projects and Check Recent Work
+      div(class='owl-carousel owl-theme case-slider ')
+        div(class='case-item position-relative ')
+          div(class='case-image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/case-study/case-study4.jpg', alt='')
+          div(class='content shadow')
+            a(href='' class='case-link fs-20 fw-bold') UI/UX Researcher
+            p(class='main-color') business / planning
+            a(class='more' type='button')
+              i(class="fa-solid fa-arrow-right")
+        div(class='case-item position-relative ')
+          div(class='case-image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/case-study/case-study3.jpg', alt='')
+          div(class='content shadow')
+            a(href='' class='case-link fs-20 fw-bold') IT consulting 
+            p(class='main-color') business / planning
+            a(class='more' type='button')
+              i(class="fa-solid fa-arrow-right")
+        div(class='case-item position-relative ')
+          div(class='case-image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/case-study/case-study2.jpg', alt='')
+          div(class='content shadow')
+            a(href='' class='case-link fs-20 fw-bold') Web Development
+            p(class='main-color') business / planning
+            a(class='more' type='button')
+              i(class="fa-solid fa-arrow-right")
+        div(class='case-item position-relative ')
+          div(class='case-image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/case-study/case-study1.jpg', alt='')
+          div(class='content shadow')
+            a(href='' class='case-link fs-20 fw-bold') bussiness solution
+            p(class='main-color') business / planning
+            a(class='more' type='button')
+              i(class="fa-solid fa-arrow-right")
+
+
+
+mixin latestBlog
+  div(class='latest-blogs section second-bg-color')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') latest blogs
+        h2(class='title-two') Let’s Check Some Latest Blog
+      div(class='row g-4 pt-40 justifiy-content-center')
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='blog card position-relative')
+            img(class='card-img-item' src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img1.jpg', alt='')
+            div(class='card-body pad-20')
+              div(class='card-icons d-flex align-items-center')
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-user b-light")
+                  p(class='main-color') by admin
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-tag b-light")
+                  p(class='main-color') by admin
+              a(href='blogDetails.html' class='title fs-20 fw-bold') product idea solution for new generation
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+              a(class='read' href="blogDetails.html" type='button b-light fw-bold') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+            div(class='date btn-bg-one')
+              div 11
+              div dec
+
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='blog card position-relative')
+            img(class='card-img-item' src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img2.jpg', alt='')
+            div(class='card-body pad-20')
+              div(class='card-icons d-flex align-items-center')
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-user b-light")
+                  p(class='main-color') by admin
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-tag b-light")
+                  p(class='main-color') by admin
+              a(href='blogDetails.html' class='title fs-20 fw-bold') New Device Invention for Digital Platform
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+              a(class='read' href="blogDetails.html" type='button b-light fw-bold') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+            div(class='date btn-bg-one')
+              div 14
+              div dec
+
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='blog card position-relative')
+            img(class='card-img-item' src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img3.jpg', alt='')
+            div(class='card-body pad-20')
+              div(class='card-icons d-flex align-items-center')
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-user b-light")
+                  p(class='main-color') by admin
+                div(class='card-icon d-flex align-items-center')
+                  i(class="fa-solid fa-tag b-light")
+                  p(class='main-color') by admin
+              a(href='blogDetails.html' class='title fs-20 fw-bold') Business Strategy Make His Goal Acheive
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+              a(class='read' href="blogDetails.html" type='button b-light fw-bold') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+            div(class='date btn-bg-one')
+              div 18
+              div dec
+
+
+mixin tech-index
+  div(class='tech-index section position-relative')
+    div(class='container')
+      div(class='section-title')
+        div(class='title-one') technology index
+        h2(class='title-two text-light') We Deliver Our Best Solution With The Goal of Trusting
+      div(class='row pt-30 g-4')
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-brands fa-android")
+            h4(class='title text-light fs-30') android
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-solid fa-laptop-code")
+            h4(class='title fs-30 text-light') web
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-brands fa-apple")
+            h4(class='title fs-30 text-light text-lowercase') ios
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-solid fa-tv")
+            h4(class='title fs-30 text-light text-uppercase') tv
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-solid fa-microchip")
+            h4(class='title fs-30 text-light text-uppercase') iot
+        div(class='col-lg-2 col-md-4 col-6')
+          div(class='tech-item')
+            i(class="fa-solid fa-stopwatch")
+            h4(class='title fs-30 text-light text-uppercase') watch
+
+mixin clients
+  div(class='clients-mini section main-bg-color')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') our clients
+        h2(class='title-two text-light') our clients feedback
+      div(class="owl-carousel clients-slider owl-theme owl-loaded pt-30 postion-relative")
+        div(class="owl-stage-outer position-relative")
+            div(class="owl-stage")
+                div(class="owl-item")
+                  div(class='client')
+                    div(class='content d-flex align-items-center position-relative')
+                      i(class="fa-solid fa-quote-left")
+                      img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img1.jpg', alt='')
+                      div(class='client-info')
+                        h3(class='name pt-10') Alin decros
+                        p(class='main-color') graphic designer
+                    p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+
+
+                div(class="owl-item")
+                  div(class='client')
+                    div(class='content d-flex align-items-center position-relative')
+                      i(class="fa-solid fa-quote-left")
+                      img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img2.jpg', alt='')
+                      div(class='client-info')
+                        h3(class='name pt-10') Jonthon Martin
+                        p(class='main-color') app developer
+                    p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+
+                div(class="owl-item")
+                  div(class='client')
+                    div(class='content d-flex align-items-center position-relative')
+                      i(class="fa-solid fa-quote-left")
+                      img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img3.jpg', alt='')
+                      div(class='client-info')
+                        h3(class='name') Elen Musk
+                        p(class='main-color') web developer
+                    p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+
+
+
+
+mixin feedback
+  div(class='feed-backs section')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') our feedback
+        h2(class='title-two text-light') clients opinios about our services
+      div(class='owl-carousel clients-feedback owl-theme pt-30')
+        div(class='client-feed')
+          div(class='content d-flex align-items-center position-relative')
+            i(class="fa-solid fa-quote-left")
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img3.jpg', alt='')
+            div(class='client-info')
+              h3(class='name') Elen Musk
+              p(class='main-color') web developer
+          p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+        div(class='client-feed')
+          div(class='content d-flex align-items-center position-relative')
+            i(class="fa-solid fa-quote-left")
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img2.jpg', alt='')
+            div(class='client-info')
+              h3(class='name pt-10') Jonthon Martin
+              p(class='main-color') app developer
+          p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+        div(class='client-feed')
+          div(class='content d-flex align-items-center position-relative')
+            i(class="fa-solid fa-quote-left")
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/clients-img/clients-img1.jpg', alt='')
+            div(class='client-info')
+              h3(class='name pt-10') Alin decros
+              p(class='main-color') graphic designer
+          p(class='main-color pt-15 fs-13') "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit"
+
+
+mixin footer
+  div(class='footer section main-bg-color')
+    div(class='container')
+      div(class='top')
+        div(class='row g-4')
+          div(class='col-lg-4 col-md-6 col-12')
+            div(class='first')
+              a(href='index.html' class='logo text-light fs-40 fw-bold')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/logos/footer-logo.png')
+              p(class='text-light pt-20 pb-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+              div(class='talk pad-20 second-bg-color position-relative d-flex justify-content-between align-items-center')
+                div(class='text')
+                  h3(class='fw-bold text-dark fs-20') Talk to Our Support
+                  div(class='text-dark fw-bold') +1 002-123-4567
+                div(class='icon')
+                  i(class="fa-solid fa-headphones-simple")
+          div(class='col-lg-2 col-md-6 col-12 ')
+            div(class='second')
+              h3(class='second-color') services
+              div(class='links pt-25')
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') IT Consultancy
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Business Solution
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Digital Services
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Business Reform
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Web Development
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Cloud Computing
+                div(class='item pb-10')
+                  a(href='serviceDetails.html' class='link' type='button')
+                    i(class="fa-solid fa-angle-right second-color")
+                    span(class='ml-10 second-color') Data Analysis
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='third')
+              h3(class='second-color') our blogs
+              div(class='blog-item pt-20 d-flex align-items-center')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img-footer3.jpg', alt='')
+                div(class='text ml-15')
+                  a(href='blogDetails.html' class='second-color fs-15 fw-bold') Business Strategy Make His Goal Acheive
+                  div(class='date orange fs-15 pt-10') 04 Dec 2020
+              div(class='blog-item pt-20 d-flex align-items-center')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img-footer.jpg', alt='')
+                div(class='text ml-15')
+                  a(href='blogDetails.html' class='second-color fs-15 fw-bold') Product Idea Solution For New Generation
+                  div(class='date orange fs-15 pt-10') 09 Dec 2020
+              div(class='blog-item pt-20 d-flex align-items-center')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img-footer2.jpg', alt='')
+                div(class='text ml-15')
+                  a(href='blogDetails.html' class='second-color fs-15 fw-bold') New Device Invention for Digital Platform
+                  div(class='date orange fs-15 pt-10') 12 Dec 2020
+          div(class='col-lg-3 col-md-6 col-12')
+            div(class='fourth')
+              div(class='newsletter')
+                h3(class='second-color') newsletter
+                p(class='second-color pt-15 fs-15') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus molestie molestie. Phasellus ac rutrum massa, et volutpat nisl. Fusce ultrices suscipit nisl.
+                form(class='subscribe')
+                  input(class='second-bg-color pad-15' type='email' placeholder='Enter Your Email')
+                  a(href='', type='button')
+                    i(class="fa-solid fa-location-arrow")
+      div(class='bottom pt-15')
+        div(class='text-light text-center') Copyright © 2022 Techex. All Rights Reserved by
+          span(class='orange fw-bold ml-10') Abdelrahman Othman
+
+mixin landing(title, breadcrumbTitle)
+  div(class='landing main-bg-color d-flex flex-column align-items-center justify-content-center')
+    h3(class='text-light')= breadcrumbTitle
+    nav(style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb")
+        ol(class='breadcrumb')
+          li(class='breadcrumb-item')
+            a(class='active' href='index.html')= title
+          li(class='breadcrumb-item text-light ' aria-current="page")= breadcrumbTitle
+
+
+mixin serviceDetails
+  div(class='details section second-bg-color')
+    div(class='container')
+      div(class='row g-4 pt-40')
+        div(class='col-lg-8')
+          div(class='service-info')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/services/service-details.jpg')
+            div(class='text-one')
+              h3(class='fs-30 fw-bold pt-20') cloud computing
+              p(class='main-color pt-10 fs-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+              div(class='row icons')
+                  div(class='col-lg-6 col-12 right')
+                      ul(class='items')
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Cost of Supplies and Equipment
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Easy to Customer Services
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Good Quality Products Services
+                  div(class='col-lg-6 col-12 left')
+                      ul(class='items')
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Change the Volume of Expected
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Bribed Autor Nisi Elit Volume
+                        li(class='item')
+                          i(class="fa-solid fa-circle-check") 
+                          | Good Quality Products Services
+              p(class='pt-10 main-color fs-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+              div(class='text-two')
+                h3(class='fs-30 fw-bold pt-15') What Benefit You Will Get
+                p(class='main-color pt-10 fs-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+                div(class='row g-4 pt-10')
+                  div(class='col-lg-6 col-12')
+                    div(class='image')
+                      img(src='https://templates.hibootstrap.com/techex/default/assets/images/services/service-details-img1.jpg', alt='')
+                  div(class='col-lg-6 col-12')
+                    div(class='image')
+                      img(src='https://templates.hibootstrap.com/techex/default/assets/images/services/service-details-img2.jpg', alt='')
+                p(class='pt-10 main-color fs-15') Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet. li, porttitor eu, consequat vitae, eleifend ac, enim.
+              div(class='text-three')
+                h3(class='fs-30 fw-bold pt-15') Our Working Proccess
+                p(class='main-color pt-10 fs-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+
+        div(class='col-lg-4')
+          div(class='our-services')
+            h3(class='fs-20 fw-bold') our services
+            ul(class='services-items')
+              li(class='service-item active')
+                i(class="fa-regular fa-circle-dot")
+                | cloud computing
+              li(class='service-item')
+                i(class="fa-regular fa-circle-dot")
+                | IT services
+              li(class='service-item')
+                i(class="fa-regular fa-circle-dot")
+                | web development
+              li(class='service-item')
+                i(class="fa-regular fa-circle-dot")
+                | business reform
+              li(class='service-item')
+                i(class="fa-regular fa-circle-dot")
+                | infrastructrue
+              li(class='service-item')
+                i(class="fa-regular fa-circle-dot")
+                | data analysis
+          div(class='tags')
+            h3(class='title fs-20 fw-bold') Tag Cloud
+            ul(class='tag-items d-flex flex-wrap pt-15')
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') android
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') creative
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') app
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') IOS
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') bussiness
+              li(class='tag-item text-light')
+                a(href="#" class='text-light btn-bg-two') consulting
+          div(class='gallery')
+            h3(class='title pt-15') gallery
+            ul(class='images d-flex flex-wrap')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img1.jpg', alt='')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img6.jpg', alt='')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img3.jpg', alt='')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img5.jpg', alt='')
+              li(class='image position-reltive')
+                img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+          div(class='archive')
+            h3(class='pt-15') archive
+            ul(class='archive-items')
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex justify-content-between')
+                  | design
+                  span(class='d-block') [73]
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex align-items-center justify-content-between') 
+                  | business
+                  span(class='d-block') [35]
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex  justify-content-between')
+                  | development
+                  span(class='d-block') [42]
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex  justify-content-between')
+                  | technology
+                  span(class='d-block') [29]
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex  justify-content-between')
+                  | startup
+                  span(class='d-block') [23]
+              li(class='archive-item d-flex align-items-center')
+                i(class="fa-regular fa-circle-dot pr-15")
+                div(class='d-flex  justify-content-between')
+                  | marketing growth
+                  span(class='d-block') [23]
+
+mixin blogs
+  div(class='blogs section second-bg-color')
+    div(class='container')
+      div(class='row g-4 pt-20')
+        div(class='col-lg-8 col-12')
+            div(class='blog-item position-relative')
+              div(class='image')
+                img( src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-style-img2.jpg', alt='')
+              div(class='blog-body pt-20')
+                div(class='blog-icons d-flex align-items-center')
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-user b-light")
+                    div(class='ml-15 main-color') by admin
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-eye b-light")
+                    div(class='ml-15 main-color') 217 views
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-tag b-light")
+                    div(class='ml-15 main-color') digital
+              a(href='blogDetails.html' class='title fs-20 d-block pt-15 fw-bold') New Device Invention for Digital Platform 
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel vewwlit nisi elit consequat ipsum.
+              a(class='button fw-bold' href="blogDetails.html" type='button') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+              div(class='date btn-bg-one')
+                div 04
+                div dec
+            div(class='blog-item position-relative')
+              div(class='image')
+                img( src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-style-img1.jpg', alt='')
+              div(class='blog-body pt-20')
+                div(class='blog-icons d-flex align-items-center')
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-user b-light")
+                    div(class='ml-15 main-color') by admin
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-eye b-light")
+                    div(class='ml-15 main-color') 347views
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-tag b-light")
+                    div(class='ml-15 main-color') business
+              a(href='blogDetail.html' class='title fs-20 d-block pt-15 fw-bold') 10 Ways To Get Efficient Result and Benefits
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel vewwlit nisi elit consequat ipsum.
+              a(class='button fw-bold' href="blogDetails.html" type='button') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+              div(class='date btn-bg-one')
+                div 11
+                div dec
+            div(class='blog-item position-relative')
+              div(class='image')
+                img( src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-style-img3.jpg', alt='')
+              div(class='blog-body pt-20')
+                div(class='blog-icons d-flex align-items-center')
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-user b-light")
+                    div(class='ml-15 main-color') by admin
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-eye b-light")
+                    div(class='ml-15 main-color') 107 views
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-tag b-light")
+                    div(class='ml-15 main-color') app
+              a(href='blogDetails.html' class='title fs-20 d-block pt-15 fw-bold') 5 App that Really Hack and Help you to Make Your Phone More Easy
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel vewwlit nisi elit consequat ipsum.
+              a(class='button fw-bold' href="blogDetails.html" type='button') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+              div(class='date btn-bg-one')
+                div 17
+                div dec
+            div(class='blog-item position-relative')
+              div(class='image')
+                img( src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-style-img4.jpg', alt='')
+              div(class='blog-body pt-20')
+                div(class='blog-icons d-flex align-items-center')
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-user b-light")
+                    div(class='ml-15 main-color') by admin
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-eye b-light")
+                    div(class='ml-15 main-color') 217 views
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-tag b-light")
+                    div(class='ml-15 main-color') by admin
+              a(href='blogDetails.html' class='title fs-20 d-block pt-15 fw-bold') Product Idea Solution for new Generation
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel vewwlit nisi elit consequat ipsum.
+              a(class='button fw-bold' href="blogDetails.html" type='button') read more
+                i(class="fa-solid fa-chevron-right ml-10 fs-12 mt-10")
+              div(class='date btn-bg-one')
+                div 13
+                div dec
+        div(class='col-lg-4 col-12')
+          div(class='right-side')
+            form(class='search form position-relative' )
+              input(type='text' placeholder='search...')
+              i(class="fa-solid fa-magnifying-glass")
+            div(class='blog-categories pt-20')
+              h3(class='fs-20 fw-bold') blog categories
+              ul(class='categories')
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') cloud computing
+                    span(class='position-absolute') [82]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') IT services
+                    span(class='position-absolute') [23]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') web development
+                    span(class='position-absolute') [46]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') business reform
+                    span(class='position-absolute') [38]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') infrastructrue
+                    span(class='position-absolute') [55]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') data analysis
+                    span(class='position-absolute') [70]
+            div(class='tags')
+              h3(class='title fs-20 fw-bold') Tag Cloud
+              ul(class='tag-items d-flex flex-wrap pt-15')
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') android
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') creative
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') app
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') IOS
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') bussiness
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') consulting
+            div(class='recent-blogs')
+              h3(class='title pt-15 w-bold') recent blogs
+              ul(class='recent-items pt-10')
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img2.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') new device innovation for digital platform
+                    div(class='date b-light') dec 04, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-details.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') 10 ways to get efficient resutls & effect
+                    div(class='date b-light') dec 11, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img3.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') idea for new 5 app design
+                    div(class='date b-light') dec 17, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img1.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') product idea solution for new generation 
+                    div(class='date b-light') dec 13, 2022
+            div(class='gallery')
+              h3(class='title pt-15') gallery
+              ul(class='images d-flex flex-wrap')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img1.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img6.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img3.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img5.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+            div(class='archive')
+              h3(class='pt-15') archive
+              ul(class='archive-items')
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex justify-content-between')
+                    | design
+                    span(class='d-block') [73]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex align-items-center justify-content-between') 
+                    | business
+                    span(class='d-block') [35]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | development
+                    span(class='d-block') [42]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | technology
+                    span(class='d-block') [29]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | startup
+                    span(class='d-block') [23]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | marketing growth
+                    span(class='d-block') [23]
+        div(class='col-12')
+          div(class='pagination-card pt-20')
+            nav(aria-label="Page navigation example")
+              ul(class="pagination")
+                li(class="page-item")
+                  a(class="page-link" href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+                li(class="page-item")
+                  a(class="page-link active" href="#" aria-label="Previous") 1
+                li(class="page-item")
+                  a(class="page-link" href="#" aria-label="Previous") 2
+                li(class="page-item")
+                  a(class="page-link" href="#" aria-label="Previous") 3
+                li(class="page-item")
+                  a(class="page-link" href="#" aria-label="Previous") 4                  
+                li(class="page-item")
+                  a(class="page-link" href="#" aria-label="Previous")
+                    span(aria-hidden="true") &raquo;
+
+
+
+mixin blog-details
+  div(class='blogs details section second-bg-color')
+    div(class='container')
+      div(class='row g-4')
+        div(class='col-lg-8 col-12')
+          div(class='blog-content')
+            div(class='blog-item position-relative')
+              div(class='image')
+                img( src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-style-img2.jpg', alt='')
+              div(class='blog-body pt-20')
+                div(class='blog-icons d-flex align-items-center')
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-solid fa-user b-light")
+                    div(class='ml-15 main-color') by admin
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-eye b-light")
+                    div(class='ml-15 main-color') 217 views
+                  div(class='blog-icon d-flex align-items-center')
+                    i(class="fa-regular fa-comments b-light")
+                    div(class='ml-15 main-color') 3 comments
+              div(class=' fs-20 d-block pt-15 fw-bold') New Device Invention for Digital Platform 
+              p(class='fs-15 main-color pt-10') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+              p(class='fs-15 main-color pt-10') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel velit nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit.
+
+              div(class='author bg-light d-flex align-items-center') 
+                i(class="fa-solid fa-quote-left")
+                div(class='text ml-20')
+                  p(class='fs-15 main-color') Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, Proin gravida nibh vel velit nisi elit.
+                  h3(class='fs-17') - Albedin Simanth
+              p(class='fs-15 main-color pt-10') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen li, porttitor eu, consequat vitae, eleifend ac, enim.
+              p(class='fs-15 main-color pt-10') It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            div(class='blog-tags d-flex justify-content-between align-items-center pad-20')
+              div(class='left-side d-flex align-items-center')
+                div(class='icon d-flex align-items-center')
+                  i(class="fa-solid fa-tag b-light mr-10")
+                  div(class='mr-10') tags: 
+                ul(class='tag-items d-flex flex-wrap pt-15')
+                  li(class='tag-item text-light')
+                    a(href="blogDetails.html" class='text-light btn-bg-two pad-10') android
+                  li(class='tag-item text-light')
+                    a(href="blogDetails.html" class='text-light btn-bg-two pad-10') creative
+                  li(class='tag-item text-light')
+                    a(href="blogDetails.html" class='text-light btn-bg-two pad-10') app
+                  li(class='tag-item text-light')
+              div(class='right-side')
+                - var socials = ['facebook', 'instagram', 'twitter', 'linkedin']
+                each social in socials
+                  a(class='social-link shadow pr-10 fs-15' href=`https://www.${social}.com`)
+                    i(class=`fa-brands fa-${social}`)
+            div(class='coments pad-20')
+              h3(class='mb-20') comments (03)
+              div(class='comment position-relative')
+                div(class='comment-info pt-20 d-flex flex-column')
+                  div(class='commenter d-flex align-items-center')
+                    img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-profile1.png', alt='')
+                    div(class='ml-20')
+                      h3(class='fs-20') Medison Decros
+                      span(class='fs-15') On September 18,2020 at 4.30 pm
+                  p(class='main-color fs-15 pt-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule us mus. Donec quam felis, ultricies ne, pellentesque.
+                a(class='button replay mb-15' type='button' href='blogDetails.html') replay
+              div(class='comment position-relative')
+                div(class='comment-info pt-20 d-flex flex-column')
+                  div(class='commenter d-flex align-items-center')
+                    img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-profile2.png', alt='')
+                    div(class='ml-20')
+                      h3(class='fs-20') Jekson Albin
+                      span(class='fs-15') On September 18,2020 at 4.30 pm
+                  p(class='main-color fs-15 pt-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule us mus. Donec quam felis, ultricies ne, pellentesque.
+                a(class='button replay mb-15' type='button' href='blogDetails.html') replay
+              div(class='comment position-relative')
+                div(class='comment-info pt-20 d-flex flex-column')
+                  div(class='commenter d-flex align-items-center')
+                    img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-profile3.png', alt='')
+                    div(class='ml-20')
+                      h3(class='fs-20') Bentham Debid
+                      span(class='fs-15') On September 18,2020 at 4.30 pm
+                  p(class='main-color fs-15 pt-15') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule us mus. Donec quam felis, ultricies ne, pellentesque.
+                a(class='button replay mb-15' type='button' href='blogDetails.html') replay
+            div(class='leave-comment pt-30')
+              h3 leave a comment
+              form(class='row pt-20 needs-validation' novalidate)
+                div(class='col-6')
+                  label(for="name" class="form-label") your name 
+                    span(class='text-danger ml-5 fw-bold') *
+                  input(type="text" class="form-control" id="name" placeholder='name' required)
+                  div(class='invalid-feedback text-danger') please type your name
+                div(class='col-6')
+                  label(for="email" class="form-label") your email 
+                    span(class='text-danger ml-5 fw-bold') *
+                  input(type="email" class="form-control" id="email" placeholder='email' required)
+                  div(class='invalid-feedback text-danger') please type your email
+                div(class='col-12 pt-20')
+                  label(for="website" class="form-label") your website 
+                    span(class='text-danger ml-5 fw-bold') *
+                  input(type="text" class="form-control" id="website" placeholder='website' required)
+                  div(class='invalid-feedback text-danger') please type your website
+                div(class='col-lg-12 pt-20')
+                  label(for="comment" class="form-label") your comment
+                    span(class='text-danger ml-5 fw-bold') *
+                  textarea(type="text" class="form-control" id="comment" placeholder='your comment' required)
+                  div(class='invalid-feedback text-danger') this field is required
+                div(class='col-lg-12 pt-20')
+                  input(type="checkbox" class="form-check-input" id="check" required)
+                  label(for="check" class="form-checklabel ml-10") Save my name, email, and website in this browser for the next time I comment.
+                  div(class='invalid-feedback text-danger') this field is required
+                div(class='pt-20')
+                  button(class="button text-capitalize" type="submit") post a comment
+        div(class='col-lg-4 col-12')
+          div(class='right-side')
+            form(class='search form position-relative')
+              input(type='text' placeholder='search...')
+              i(class="fa-solid fa-magnifying-glass")
+            div(class='blog-categories pt-20')
+              h3(class='fs-20 fw-bold') blog categories
+              ul(class='categories')
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') cloud computing
+                    span(class='position-absolute') [82]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') IT services
+                    span(class='position-absolute') [23]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') web development
+                    span(class='position-absolute') [46]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') business reform
+                    span(class='position-absolute') [38]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') infrastructrue
+                    span(class='position-absolute') [55]
+                li(class='category-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot")
+                  div(class='text d-flex ')
+                    a(href='#') data analysis
+                    span(class='position-absolute') [70]
+            div(class='tags')
+              h3(class='title fs-20 fw-bold') Tag Cloud
+              ul(class='tag-items d-flex flex-wrap pt-15')
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') android
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') creative
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') app
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') IOS
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') bussiness
+                li(class='tag-item text-light')
+                  a(href="#" class='text-light btn-bg-two') consulting
+            div(class='recent-blogs')
+              h3(class='title pt-15 w-bold') recent blogs
+              ul(class='recent-items pt-10')
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img2.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') new device innovation for digital platform
+                    div(class='date b-light') dec 04, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-details.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') 10 ways to get efficient resutls & effect
+                    div(class='date b-light') dec 11, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img3.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') idea for new 5 app design
+                    div(class='date b-light') dec 17, 2022
+                li(class='recent-item d-flex align-items-center')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-img1.jpg', al='')
+                  div(class='text ml-15')
+                    a(href='' class='fw-bold') product idea solution for new generation 
+                    div(class='date b-light') dec 13, 2022
+            div(class='gallery')
+              h3(class='title pt-15') gallery
+              ul(class='images d-flex flex-wrap')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img1.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img6.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img3.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img5.jpg', alt='')
+                li(class='image position-reltive')
+                  img(src='https://templates.hibootstrap.com/techex/default/assets/images/blog/blog-small-img2.jpg', alt='')
+            div(class='archive')
+              h3(class='pt-15') archive
+              ul(class='archive-items')
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex justify-content-between')
+                    | design
+                    span(class='d-block') [73]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex align-items-center justify-content-between') 
+                    | business
+                    span(class='d-block') [35]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | development
+                    span(class='d-block') [42]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | technology
+                    span(class='d-block') [29]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | startup
+                    span(class='d-block') [23]
+                li(class='archive-item d-flex align-items-center')
+                  i(class="fa-regular fa-circle-dot pr-15")
+                  div(class='d-flex  justify-content-between')
+                    | marketing growth
+                    span(class='d-block') [23]
+
+
+mixin pricing
+  div(class='pricing section second-bg-color')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') what we offer
+        h2(class='title-two') Our Pricing Plan For You
+        p(class='') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ipsum suspendisse.
+      div(class='row g-5 pt-40')
+        div(class='col-lg-12')
+          div(class='chang-plan shadow')
+            span(class='toggler active' id='month') month
+            span(class='toggler' id='year') year
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='plan shadow second-bg-color')
+            div(class='title')
+              div(class='fs-30') basic
+              div(class='fs-14 main-color pt-10') build a Website
+            div(class='price month active  shadow mt-20 mb-20' id='price-month') $29
+              sub /m
+            div(class='price year  shadow mt-20 mb-20' id='price-year') $110
+              sub /y
+            ul(class='offers')
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-xmark red")
+                span Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-xmark red")
+                span Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-xmark red")
+                span Drag & Drop Builder
+            button(class='start button' type='button' data-bs-toggle="modal" data-bs-target="#staticBackdrop") Get Started
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='plan second shadow second-bg-color')
+            div(class='pop') popular
+            div(class='title')
+              div(class='fs-30') standard
+              div(class='fs-14 main-color pt-10') build a Website
+            div(class='price active month shadow mt-20 mb-20') $59
+              sub /m
+            div(class='price year shadow mt-20 mb-20') $225
+              sub /y
+            ul(class='offers')
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-xmark red")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-xmark red")
+                span Drag & Drop Builder
+            button(class='start button' type='button' data-bs-toggle="modal" data-bs-target="#staticBackdrop") Get Started
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='plan second shadow second-bg-color')
+            div(class='title')
+              div(class='fs-30') pretium
+              div(class='fs-14 main-color pt-10') build a Website
+            div(class='price active month shadow mt-20 mb-20') $79
+              sub /m
+            div(class='price year shadow mt-20 mb-20') $375
+              sub /y
+            ul(class='offers')
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+              li(class='offer') 
+                i(class="fa-regular fa-circle-check green")
+                span(class='main-color') Drag & Drop Builder
+            button(class='start button' type='button' data-bs-toggle="modal" data-bs-target="#staticBackdrop") Get Started
+
+      div(class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+        div(class="modal-dialog  modal-lg")
+          div(class="modal-content")
+            div(class="modal-header")
+              h5(class="modal-title" id="staticBackdropLabel") Register
+              button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close")
+            div(class="modal-body")
+              form(class="row g-3 wrap needs-validation" novalidate)
+                div(class='col-lg-6')
+                  label(label for="validationCustom01" class="form-label") Full Name
+                  input(type="text" class="form-control" id="validationCustom01" placeholder="Your Full Name" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom02" class="form-label") Email
+                  input(type="email" class="form-control" id="validationCustom02" placeholder="Your Email Address" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom03" class="form-label") Gender
+                  select(for="validationCustom03" class="form-select")
+                    option(option selected disabled value="") choose..
+                    option Male
+                    option Fmale
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom04" class="form-label") Mobile Number
+                  input(type="number" class="form-control" id="validationCustom04" placeholder="Your Mobile Number" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom05" class="form-label") Nationality
+                  input(type="text" class="form-control" id="validationCustom05" placeholder="Your Nationality" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom06" class="form-label") Address
+                  input(type="text" class="form-control" id="validationCustom06" placeholder="Your Full Address" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom07" class="form-label") Credit Type
+                  input(type="text" class="form-control" id="validationCustom07" placeholder="Credit Type" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  label(label for="validationCustom08" class="form-label") Credit Number
+                  input(type="number" class="form-control" id="validationCustom08" placeholder="Your Credit Number" required)
+                  div(class="invalid-feedback") This field is required
+                div(class='col-lg-6')
+                  div(class="form-check")
+                    input(input class="form-check-input" type="checkbox" value="" id="invalidCheck" required)
+                    label(class="form-check-label text-lowercase" for="invalidCheck") I've red and agreed terms and conditions
+                div(class='col-12')
+                  button(type="submit" class="btn btn-primary mt-30") Register
+
+mixin company-info
+  div(class='company-info section')
+    div(class='container')
+      div(class='row')
+        div(class='col-lg-6 col-12')
+          div(class='image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/about/about-img5.png', alt='')
+        div(class='col-lg-6 col-12')
+          div(class='text mt-30')
+            h6(class='b-light') about our company
+            h2(class='') We Are Increasing Business With Promising It Services
+            p(class='main-color') Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum auctor a ornare odio.
+            div(class='progress-bars')
+              h4(class='mb-20 fs-20') We Have 22+ Years Of Experience. We Offer It Solutions , Digital Technology Service
+              div(class='bar ')
+                div(class='name') problems
+                div(class='percent one position-absolute') 90%
+                div(class='progress mt-20')
+                  div(class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%")
+              div(class='bar')
+                div(class='name') solutions
+                div(class='percent two position-absolute') 80%
+                div(class='progress mt-20')
+                  div(class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="width: 80%")
+
+
+mixin solutions
+  div(class='solutions section ')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') IT Security & Computing
+        h2(class='title-two') Searching for a Solution! We Provide Truly Prominent IT Solutions
+      div(class='row g-3 pt-30')
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://cdn-icons-png.flaticon.com/512/1231/1231525.png?w=740&t=st=1672005964~exp=1672006564~hmac=406942aed8947ce5d29d326baf8dbef7e470b3f1248933eb82f78c4328a2e97a', alt='')
+            h3(class='title pt-10') business security
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://cdn-icons-png.flaticon.com/512/1118/1118481.png?w=740&t=st=1672005912~exp=1672006512~hmac=0b31b732d491b0a290fba0af0c065266781368cb199a1c426f4c0f5c5315960f', alt='')
+            h3(class='title pt-10') manage IT services
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://img.freepik.com/free-icon/analytics_318-887973.jpg?t=st=1672006022~exp=1672006622~hmac=1db4890eeefa45d71685a3cb86682078b5282c4127d563dac1e4c231ec671033', alt='')
+            h3(class='title pt-10') product analysis
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://cdn-icons-png.flaticon.com/512/1239/1239617.png?w=740&t=st=1672006277~exp=1672006877~hmac=0ffb7c2824af98f99edf98687f754b9b5fd99d3e25ca2de9059b93538ad9b9ef', alt='')
+            h3(class='title pt-10') analytic solution
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://cdn-icons-png.flaticon.com/512/1021/1021157.png?w=740&t=st=1672006541~exp=1672007141~hmac=97020d5ff656dd6b0aa8daa7a5bd857bdabc58786db645b446bb556153160780', alt='')
+            h3(class='title pt-10') finest quality
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+        div(class='col-lg-4 col-md-6 col-12')
+          div(class='solution shadow')
+            img(src='https://cdn-icons-png.flaticon.com/512/1232/1232786.png?w=740&t=st=1672006666~exp=1672007266~hmac=2482519b64799ddcb36e0ab824513b8da6cab162a710acb29a7616dc0b3c596f', alt='')
+            h3(class='title pt-10') risk management
+            p(class='main-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.
+
+
+mixin team 
+  div(class='team section')
+    div(class='container')
+      div(class='section-title')
+        h6(class='title-one') our team
+        h2(class='title-two') our team members
+      div(class='row g-4 pt-40')
+        div(class='col-lg-3 col-md-4 col-6')
+          div(class='member')
+            div(class='member-image')
+              img(src='https://templates.hibootstrap.com/techex/default/assets/images/team/team-img1.jpg', alt='')
+            div(class='member-info')
+              h4(class='member-name') Adam Smith
+              h6(class='position') president & CEO
+            button( type='button' class='share shadow')
+              i(class="fa-solid fa-share-nodes b-blue")
+            div(class='media-links')
+              a(class='link' href='https://www.facebook.com/')
+                i(class="fa-brands fa-facebook")
+              a(class='link' href='https://www.instagram.com/')
+                i(class="fa-brands fa-instagram")
+              a(class='link' href='https://www.twitter.com/')
+                i(class="fa-brands fa-twitter")
+              a(class='link' href='https://www.linkedin.com/')
+                i(class="fa-brands fa-linkedin")
+        div(class='col-lg-3 col-md-4 col-6')
+          div(class='member')
+            div(class='member-image')
+              img(src='https://templates.hibootstrap.com/techex/default/assets/images/team/team-img3.jpg', alt='')
+            div(class='member-info')
+              h4(class='member-name') Park Anderson
+              h6(class='position') founder
+            button( type='button' class='share shadow')
+              i(class="fa-solid fa-share-nodes b-blue")
+            div(class='media-links')
+              a(class='link' href='https://www.facebook.com/')
+                i(class="fa-brands fa-facebook")
+              a(class='link' href='https://www.instagram.com/')
+                i(class="fa-brands fa-instagram")
+              a(class='link' href='https://www.twitter.com/')
+                i(class="fa-brands fa-twitter")
+              a(class='link' href='https://www.linkedin.com/')
+                i(class="fa-brands fa-linkedin")
+        div(class='col-lg-3 col-md-4 col-6')
+          div(class='member')
+            div(class='member-image')
+              img(src='https://templates.hibootstrap.com/techex/default/assets/images/team/team-img4.jpg', alt='')
+            div(class='member-info')
+              h4(class='member-name') Tom Shumate
+              h6(class='position') sales executive
+            button( type='button' class='share shadow')
+              i(class="fa-solid fa-share-nodes b-blue")
+            div(class='media-links')
+              a(class='link' href='https://www.facebook.com/')
+                i(class="fa-brands fa-facebook")
+              a(class='link' href='https://www.instagram.com/')
+                i(class="fa-brands fa-instagram")
+              a(class='link' href='https://www.twitter.com/')
+                i(class="fa-brands fa-twitter")
+              a(class='link' href='https://www.linkedin.com/')
+                i(class="fa-brands fa-linkedin")
+        div(class='col-lg-3 col-md-4 col-6')
+          div(class='member')
+            div(class='member-image')
+              img(src='https://templates.hibootstrap.com/techex/default/assets/images/team/team-img6.jpg', alt='')
+            div(class='member-info')
+              h4(class='member-name') Carrie Horton
+              h6(class='position') sales manager
+            button( type='button' class='share shadow')
+              i(class="fa-solid fa-share-nodes b-blue")
+            div(class='media-links shadow')
+              a(class='link' href='https://www.facebook.com/')
+                i(class="fa-brands fa-facebook")
+              a(class='link' href='https://www.instagram.com/')
+                i(class="fa-brands fa-instagram")
+              a(class='link' href='https://www.twitter.com/')
+                i(class="fa-brands fa-twitter")
+              a(class='link' href='https://www.linkedin.com/')
+                i(class="fa-brands fa-linkedin")
+
+
+mixin contact 
+  div(class='contact section second-bg-color')
+    div(class='container')
+      div(class='section-title')
+        h2(class='title-two') Let's Send Us a Message Below
+      div(class='row pt-40')
+        div(class='col-lg-4 col-12')
+          div(class='contact-info') 
+            h6(class='title orange') contact info 
+            h4(class=' second-color') Let's Connect With Us
+            p(class='fs-14 second-color') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet varius mi, ut hendrerit magna mollis ac.
+            div(class='contact-details pt-15')
+              div(class='detail d-flex align-items-center mb-20') 
+                i(class="fa-solid fa-phone-volume")
+                div(class='details')
+                  h5(class=' second-color fs-20') phone number
+                  a(class='second-color', href='tel: +201112391020') +201112391020
+              div(class='detail d-flex align-items-center mb-20') 
+                i(class="fa-solid fa-location-dot")
+                div(class='details')
+                  h5(class=' second-color fs-20') address
+                  span(class='second-color') beni mazar, el menia, egypt
+              div(class='detail d-flex align-items-center mb-20') 
+                i(class="fa-regular fa-comment-dots")
+                div(class='details')
+                  h5(class=' second-color fs-20') email address
+                  a(class='second-color text-lowercase', href='mai: abderlarhman.othman@gamil.com') zerosc201@gmail.com
+        div(class='col-lg-8 col-12')
+          form(class='row g-3 contact-form needs-validation' novalidate)
+            div(class='col-lg-6')
+              label(for="validationCustom01" class="form-label") your name 
+                span(class='text-danger ml-5 fw-bold') *
+              input(type="text" class="form-control" id="validationCustom01" placeholder='name' required)
+              div(class='valid-feedback text-sucess') looks good
+              div(class='invalid-feedback text-danger') please type your name
+            div(class='col-lg-6')
+              label(for="email" class="form-label") your email
+                span(class='text-danger ml-5 fw-bold') *
+              input(type="email" class="form-control" id="email" placeholder='email' required)
+              div(class='valid-feedback text-sucess') looks good!
+              div(class='invalid-feedback text-danger') please type valid email
+            div(class='col-lg-6')
+              label(for="phone-number" class="form-label") phone number
+                span(class='text-danger ml-5 fw-bold') *
+              input(type="text" class="form-control" id="phone-number" placeholder='phone number' required)
+              //- div(class='valid-feedback') looks good!
+              div(class='invalid-feedback text-danger') please enter your phone number
+            div(class='col-lg-6')
+              label(for="subject" class="form-label") your subject
+                span(class='text-danger ml-5 fw-bold') *
+              input(type="text" class="form-control" id="subject" placeholder='subject' required)
+              div(class='valid-feedback') looks good!
+              div(class='invalid-feedback text-danger') please enter your phone number
+            div(class='col-lg-12')
+              label(for="message" class="form-label") your message
+                span(class='text-danger ml-5 fw-bold') *
+              textarea(type="text" class="form-control" id="message" placeholder='your message' required)
+              div(class='invalid-feedback text-danger') this field is required
+            div(class='col-12')
+              input(type="checkbox" class="form-check-input" id="terms-check"  required)
+              label(for="terms-check" class="form-label") accept 
+                a(href='#') terms & conditions 
+                | And 
+                a(href='#') privacy & policy
+                span(class='text-danger ml-5 fw-bold') *
+              div(class='invalid-feedback text-danger') this field is required
+            div(class='')
+              button(class="btn" type="submit") send message
+            div(class='valid')
+              h3(class='text-success') message submitted!
+    div(class='col-12 pt-40')
+      div(class='our-location')
+        h2(class='fs-30 pad-20') find our location
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14026.385486864072!2d30.79386076977539!3d28.491699800000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b06b569ca46eb%3A0xa344992a2c76e19e!2sBani%20Mazar%2C%20Madinet%20Bani%20Mazar%2C%20Beni%20Mazar%2C%20Menia%20Governorate%202534546!5e0!3m2!1sen!2seg!4v1672166387352!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+mixin toTop
+  a(href='#', class='toTop' id='toButton')
+    i(class="fa-solid fa-arrow-up")

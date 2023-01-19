@@ -1,0 +1,80 @@
+.contact{
+  padding-bottom: 0;
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+    .contact-info{
+      margin-bottom: 50px;
+      padding: 50px 30px;
+      background-color: $blue-dark;
+      position: relative;
+      border-radius: 10px;
+      z-index: 1;
+      &::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url(https://templates.hibootstrap.com/techex/default/assets/images/call-us/call-shap1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: .1;
+      }
+      .contact-details{
+        .detail{
+          svg{
+            color: $blue-light;
+            background-color: white;
+            padding: 15px;
+            border-radius: 50%;
+            margin-right: 15px;
+            &.fa-phone-volume{
+              transform: rotate(-45deg);
+            }
+          }
+          a{
+            transition: .6s;
+          }
+        }
+      }
+    }
+    .contact-form{
+      input{
+        &:not(:last-of-type){
+
+          padding: 10px 20px;
+        }
+        border-radius: 0;
+        border-color: $blue-light;
+        outline: none;
+        &:focus, &:hover, &:vertical{
+          outline: none;
+          border-color: $blue-dark;
+        }
+      }
+      .invalid-feedback{
+        transition: .7s;
+      }
+      textarea{
+        border-radius: 0;
+        height: 170px;
+        border-color: $blue-light;
+        outline: none;
+      }
+      button{
+        background-color: $blue-dark;
+        color: white;
+        border-radius: 0;
+      }
+      .valid{
+        display: none;
+      }
+    }
+  }
+}
+
+

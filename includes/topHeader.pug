@@ -1,0 +1,13 @@
+div(class='top-header main-bg-color main-color pad-10')
+      div(class='container d-flex justify-content-between align-items-cent15')
+        div(class='links')
+          a(href='register.html' class='top-link text-light fs-15 mr-15') sign up
+          a(href='privacy.html' class='top-link text-light fs-15 ') privacy policy
+          a(href='login.html' class='top-link text-light fs-15 ml-15') Login
+        div(class='socials d-flex align-items-center justify-content-center')
+            div(class='follow fs-15 second-color d-block mr-10') follow us:
+            - var socials = ['facebook', 'instagram', 'twitter', 'linkedin']
+            each social in socials
+              a(class='social-link text-light pr-10 fs-15' href=`https://www.${social}.com`)
+                i(class=`fa-brands fa-${social}`)
+              

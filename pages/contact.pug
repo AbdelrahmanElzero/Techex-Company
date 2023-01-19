@@ -1,0 +1,15 @@
+extends index.pug
+
+block title 
+  title contact us
+
+block landing
+  +landing('home', 'contact us')
+
+block content
+  +contact
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')
+    script(src="js/forms.js")

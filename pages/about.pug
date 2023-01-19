@@ -1,0 +1,22 @@
+extends index.pug
+
+block title
+  title about us
+
+block landing
+  +landing('home', 'about us')
+
+block content
+  +company-info
+
+  +solutions
+
+  +team
+  +stats
+  +pricing
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')
+    script(src='js/about.js')
+    script(src="js/forms.js")

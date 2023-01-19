@@ -1,0 +1,120 @@
+.pricing{
+  .container{
+    .plan{
+      padding: 30px;
+      @include flex(column, center, center);
+      gap: 14px;
+      text-align: center;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      transition: .5s;
+      position: relative;
+      &:hover{
+        margin-top: -20px;
+      }
+      &.second{
+        overflow: hidden;
+        position: relative;
+        .pop{
+          position: absolute;
+          top: -15px;
+          right: -50px;
+          background-color: rgb(0, 113, 220);
+          transform: rotate(45deg);
+          color: black;
+          padding: 35px 40px 12px 35px;
+          color: white;
+        }
+      }
+      
+      .offers{
+        padding-left: 0;
+        .offer{
+          margin-bottom: 10px;
+          svg{
+            padding-right: 10px;
+            font-size: 18px;
+          }
+          span{
+            font-size: 17px;
+            color: rgba(68, 68, 68, 0.821);
+          }
+        }
+      }
+      .start{
+        background-color: $blue-dark;
+        color: white;
+        padding: 8px 18px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 50%;
+          background-color: $blue-light;
+          z-index: -1;
+          transition: .7s;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -100%;
+          width: 100%;
+          height: 50%;
+          background-color: $blue-light;
+          z-index: -1;
+          transition: .7s;
+        }
+        &:hover{
+          &::before{
+            right: 0;
+          }
+          &::after{
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.chang-plan{
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px 30px;
+  text-align: center;
+  span{
+    margin: 0 20px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid $blue-dark;
+    &.active{
+      background-color: $blue-dark;
+      color: white;
+    }
+  }
+}
+
+
+
+.price{
+  width: 120px;
+  height: 120px;
+  @include flex(row, center, center);
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 24px;
+  &.year{
+    display: none;
+  }
+}
+

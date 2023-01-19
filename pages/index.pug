@@ -1,0 +1,35 @@
+include includes/mixins.pug
+doctype html
+html(lang='en')
+  head
+    include includes/meta
+    include includes/styles.pug
+    block title
+      title Techex
+  body
+    include includes/topHeader
+    include includes/head
+    block landing
+      include includes/slider
+    +toTop
+    block content
+      +about
+      +services
+      +working
+      +video
+      +stats
+      +call
+      +cases
+      +tech-index
+      +feedback
+      +latestBlog
+    block footer
+        +footer
+    block scripts
+      include includes/scripts.pug
+      script(src="js/jquery-3.6.0.js")
+      script(src="js/owl.carousel.min.js")
+      script(src='js/global.js')
+      script(src="js/home.js")
+      script(src="js/forms.js")
+

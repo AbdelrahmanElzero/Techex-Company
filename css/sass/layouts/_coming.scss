@@ -1,0 +1,94 @@
+  
+  .coming{
+    .container{
+      .content-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        max-width: 750px;
+        padding: 50px 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: #f8f8f8;
+        border: 3px solid $blue-light;
+        .coming-timer{
+          gap: 14px;
+          flex-wrap: wrap;
+          .time{
+            position: relative;
+            padding: 20px;
+            width: 90px;
+            height: 90px;
+            @include flex(column, center, center);
+            background-color: white;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            &::before{
+              width: 100%;
+              height: 40px;
+              background-color: $blue-dark;
+              position: absolute;
+              bottom: -30px;
+              left: 0;
+              color: white;
+              font-size: 16px;
+              letter-spacing: 1.2px;
+              @include flex(row, center, center);
+            }
+            &.days::before{
+              content: "Days";
+            }
+            &.hours::before{
+              content: "Hours";
+            }
+            &.minutes::before{
+              content: "Minutes";
+            }
+            &.seconds::before{
+              content: "Seconds";
+            }
+          }
+        }
+        .newsletter{
+          margin-top: 40px;
+          input{
+            padding: 10px 20px;
+            height: 40px;
+            border: 1px solid $blue-light;
+            
+          }
+        }
+        .socials{
+          gap: 10px;
+          .social-link{
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            @include flex(row, center, center);
+            background-color: white;
+            color: $blue-light;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  @media (max-width: 767px){
+    .content-box{
+        margin-left: 30px;
+        margin-right: 30px;
+        .newsletter{
+          button{
+            bottom: 0;
+            margin-top: 20px;
+          }
+        }
+    }
+  }

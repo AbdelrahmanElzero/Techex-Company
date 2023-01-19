@@ -1,0 +1,754 @@
+.about{
+  .container{
+    .sub-content{
+      gap: 14px;
+      @media (max-width: 767px){
+        svg{
+          font-size: 30px;
+        }
+        h3{
+          font-size: 20px;
+        }
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+    .about-image{
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        background: transparent;
+        border: 3px solid $orange;
+        border-radius: 12px;
+        z-index: -1;
+        bottom: -15px;
+        right: -20px;
+      }
+      img{
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .satisfied{
+        width: 350px;
+        background-color: white;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 12px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 430px){
+          width: 280px;
+          img{
+            width: 100px;
+          }
+          .text{
+            h6{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services-mini{
+  .container{
+    .section-title{
+      h2{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 767px){
+          font-size: 25px;
+        }
+      }
+      p{
+        max-width: 790px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .service-image{
+      img{
+        width: 300px;
+      }
+    }
+    .service-min{
+      padding: 30px 20px;
+      border-radius: 10px;
+      z-index: 1;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        border-radius: 170px 0 0 0;
+        background-color: $blue-light;
+        opacity: .2;
+        bottom: -30px;
+        right: -30px;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 170px 0 0 0;
+        background-color: $blue-light;
+        opacity: .3;
+        bottom: -10px;
+        right: -15px;
+        transition: .6s;
+        z-index: -1;
+      }
+      &:hover{
+        &::after{
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          right: 0;
+          border-radius: 10px;
+          opacity: 1;
+          
+        }
+        svg, h4, p, a{
+          color: white;
+        } 
+      }
+      svg{
+        transition: .6s;
+      }
+      p{
+        line-height: 1.9;
+        transition: .6s;
+      }
+      a{
+        color: black;
+        transition: .6s;
+        svg{
+          margin-left: 5px;
+          font-size: 12px;
+          margin-top: 2px;
+          transition: .5s;
+        }
+        &:hover{
+          svg{
+            margin-left: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.working-process{
+  .container{
+    .working-card{
+      position: relative;
+      border-radius: 8px;
+      padding: 30px 20px;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 50px;
+        background-color: $blue-light;
+        opacity: .2;
+      }
+      .num{
+        position: absolute;
+        top: 5px;
+        right: 13px;
+        color: $blue-light;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.video{
+  position: relative;
+  z-index: 16;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: $blue-light;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(https://templates.hibootstrap.com/techex/default/assets/images/build/build-bg.png);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .video-content{
+    overflow: hidden;
+    .video-image{
+      padding-top: 40px;
+      img{
+        max-width: 100%;
+        border-radius: 22px;
+      }
+      @media(max-width: 767px){
+        padding-top: 10px;
+      }
+    }
+    .video-info{
+      max-width: 480px;
+      padding: 150px 80px 110px 40px;
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      border-top-right-radius: 70%;
+      border-bottom-left-radius: 30px;
+      background-color: #25252538;
+      z-index: 1;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        background-color: $blue-light;
+        width: 90%;
+        height: 90%;
+        border-top-right-radius: 70%;
+        border-bottom-left-radius: 30px;
+        z-index: -1;
+      }
+      @media(max-width: 991px){
+        max-width: 352px;
+        padding: 103px 88px 49px 30px;
+      }
+    }
+    .play-video{
+      top: 50%;
+      left: 30%;
+      z-index: 1;
+      button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid $blue-dark;
+        outline: none;
+        svg{
+          color: $blue-light;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px){
+        top: 40%;
+      }
+    }
+  }
+}
+.video-popup{
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.737);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  &.active{
+    display: block;
+  }
+  video{
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 991px){
+      width: 600px;
+    }
+    @media (max-width: 767px){
+      width: 400px;
+    }
+    @media (max-width: 440px){
+      width: 340px;
+    }
+  }
+  .close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: none;
+    outline: none;
+    svg{
+      transition: .6s;
+      color: red;
+      font-size: 34px;
+    }
+    &:hover{
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .video{
+    .content{
+      @include flex(column, center, center);
+      gap: 14px;
+      text-align: center;
+    }
+    .video-info{
+      display: none;
+    }
+    .play-video{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+
+.stats{
+  .stat-item{
+    gap: 12px;
+    background-color: white;
+    padding: 30px 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-color: $blue-light;
+      transition: .6s;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $blue-light;
+      transition: .6s;
+    }
+    &:hover{
+
+      &::before, &::after{
+        height: 100%;
+      }
+    }
+    .item-image{
+      width: 85px;
+      height: 85px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+.call{
+  padding-bottom: 0;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(https://templates.hibootstrap.com/techex/default/assets/images/call-us/call-shap1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .text{
+    @media (max-width: 767px){
+      p{
+        font-size: 14px;
+      }
+    }
+    a.contact-us{
+      background-color: white;
+      color: black;
+      z-index: 0;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+  .call-image{
+    text-align: center;
+    z-index: 0;
+    img{
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .call-quote{
+      top: 0;
+      right: -20px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .call-quote{
+    top: -13px;
+    right: 66px !important;
+    
+  }
+}
+
+
+
+
+.latest-blogs{
+  .blog{
+    transition: .6s;
+    overflow: hidden;
+    img{
+      transition: .6s;
+      &:hover{
+        transform: skew(1.3);
+      }
+    }
+    .card-body{
+      .card-icons{
+        gap: 20px;
+        .card-icon{
+          padding-top: 10px;
+          padding-bottom: 10px;
+          gap: 8px;
+          p{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .title{
+        color: black;
+        transition: .6s;
+      }
+      .read{
+        transition: .6s;
+        &:hover{
+          color: black;
+          font-size: 17px;
+        }
+      }
+    }
+    .date{
+      width: 60px;
+      height: 75px;
+      @include flex(column, center, center);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 4px;
+      position: absolute;
+      top: 35%;
+      right: 30px;
+    }
+    &:hover{
+      margin-top: -20px;
+      .title{
+        color: $orange;
+      }
+      
+    }
+  }
+}
+
+.cases-mini{
+  margin-bottom: 50px;
+  .case-slider{
+    padding-top: 70px;
+    position: relative;
+    .case-item{
+      position: relative;
+      .case-image{
+        img{
+          max-width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .content{
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        width: 90%;
+        height: 100px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 10px;
+        border-radius: 7px;
+        background-color: white;
+        overflow: hidden;
+        cursor: pointer;
+        .case-link{
+          color: black;
+          transition: .6s;
+        }
+        .more{
+          position: absolute;
+          right: 15px;
+          bottom: 10px;
+          z-index: 1;
+          svg{
+            color: $blue-light;
+            transition: .6s;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            right: -15px;
+            background-color: #0072dc2e;
+            border-top-left-radius: 30px;
+            width: 45px;
+            height: 45px;
+            z-index: -1;
+            transition: .6s;
+          }
+        }
+        &:hover{
+          .case-link{
+            color: $blue-light;
+          }
+          .more{
+            svg{
+              color: white;
+            }
+            &::before{
+              background-color: $blue-light;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.case-slider{
+  position: relative;
+  .owl-nav{
+  display: block !important;
+  button{
+    position: absolute;
+    background-color: $blue-light !important;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    
+    z-index: 4;
+    span{
+      color: white;
+      font-size: 30px;
+      margin-top: -6px;
+      display: block;
+    }
+    &.owl-prev{
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    &.owl-next{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  }
+  
+}
+
+
+@media(max-width: 767px){
+  .call{
+    .text{
+      text-align: center;
+    }
+    .call-quote{
+      display: none;
+    }
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .latest-blogs{
+    .row{
+      .col-lg-4:last-of-type{
+        margin-top: 50px;
+        margin-left: 170px;
+      }
+    }
+  }
+}
+
+
+
+
+.tech-index{
+  z-index: 0;
+  margin-bottom: 100px;
+  background-image: url(https://templates.hibootstrap.com/techex/default/assets/images/technology-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $blue-dark;
+    opacity: .5;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .title-one{
+    color: $orange;
+  }
+  .tech-item{
+    padding: 30px 20px;
+    z-index: 1;
+    border: 3px solid white;
+    text-align: center;
+    svg{
+      color: white;
+      font-size: 50px;
+    }
+    h4{
+      padding-top: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.feed-backs{
+  z-index: 0;
+  position: relative;
+  height: 600px;
+  background-color: $blue-dark;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://templates.hibootstrap.com/techex/default/assets/images/clients-img/client-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .clients-feedback{
+    .client-feed{
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      .content{
+        gap: 25px;
+        svg{
+          position: absolute;
+          left: 90px;
+          background-color: $orange;
+          color: white;
+          padding: 5px;
+          border-radius: 50%;
+        }
+        img{
+          max-width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+    .owl-nav{
+      button.owl-next{
+        background: transparent;
+        border: 3px solid $blue-light;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        span{
+          color: $blue-light;
+          font-size: 30px;
+          display: inline-block;
+          margin-top: -5px;
+          font-weight: bold;
+        }
+      }
+      button.owl-prev{
+        background: transparent;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -20px;
+        border: 3px solid $blue-light;
+        border-radius: 50%;
+        span{
+          color: $blue-light;
+          font-size: 30px;
+          display: inline-block;
+          margin-top: -5px;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 450px){
+        button{
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+

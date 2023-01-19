@@ -1,0 +1,16 @@
+extends index.pug
+
+block title 
+  title service details
+
+block landing
+  +landing('services', 'services details')
+
+
+block content
+  +serviceDetails
+
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')

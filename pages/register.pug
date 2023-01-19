@@ -1,0 +1,39 @@
+extends index.pug
+
+block title 
+  title Sign Up
+  
+block landing
+  +landing('home', 'register')
+
+
+block content
+  div(class='register section')
+    div(class='container')
+      div(class='row')
+        div(class='col-lg-6 col-12')
+          div(class='image')
+            img(src='https://templates.hibootstrap.com/techex/default/assets/images/user-img.jpg', alt='')
+        div(class='col-lg-6 col-12')
+          form(class='row g-3 contact-form needs-validation' novalidate)
+            div(class='col-lg-12')
+              h2 Sign Up
+            div(class='col-lg-12')
+              input(type="text" class="form-control" id="user-name" placeholder='enter your username' required)
+              div(class='invalid-feedback text-danger') please type your username
+            div(class='col-lg-12')
+              input(type="email" class="form-control" id="validationCustom01" placeholder='enter your email' required)
+              div(class='invalid-feedback text-danger') this field is required
+            div(class='col-lg-12')
+              input(type="text" class="form-control" id="validationCustom01" placeholder='enter your password' required)
+              div(class='invalid-feedback text-danger') please enter your password
+            div(class='col-lg-12')
+              button(class='btn' type='submit') Sign Up
+            div(class='col-lg-12 fw-bold')
+              div already have an account?
+                a(href='login.html' class='ml-10') login 
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')
+    script(src="js/forms.js")

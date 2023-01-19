@@ -1,0 +1,12 @@
+extends index.pug
+
+block landing
+  +landing('home', 'services')
+
+block content
+  include includes/services
+
+
+block scripts
+    include includes/scripts.pug
+    script(src='js/global.js')
